@@ -1,37 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind CSS Introduction & Challenge</title>
-    <link rel="stylesheet" href="./style.css">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<section class="md:flex justify-center gap-x-[75px]">
-    <div class="flex items-center flex-col">
-        <img class="rounded-full w-20 border-5 m-2" src="./drippy.jpg" alt="Profile Picture">
-        <h1 class="text-4xl font-extrabold">KolKhara08</h1>
-        <p class="font-bold">Karam Abbas</p>
-        <p class=>West-MEC Coding Student</p>
-        <button class="bg-blue-600 rounded-full text-white p-1 hover:bg-blue-800 m-2">Message</button>
-    </div>
-
+<section class="grid grid-cols-1 bg-gray-300 h-screen dark md:flex justify-center gap-x-[75px]"> <!-- Grid makes it stack on top of each other on mobile, Flex makes it spread out on iPads or Desktops -->
     <div class="flex items-center justify-center flex-col">
-        <img class="rounded-full w-20 border-5" src="./drippy.jpg" alt="Profile Picture m-2">
-        <h1 class="text-4xl font-extrabold">KolKhara08</h1>
-        <p class="font-bold">Karam Abbas</p>
-        <p>West-MEC Coding Student</p>
+        <img class="rounded-full w-20 border-5 dark:border-white" src="./drippy.jpg" alt="Profile Picture m-2">
+        <h1 class="text-4xl font-extrabold dark:text-white">KolKhara08</h1> <!--May or may not be actual username-->
+        <p class="font-bold dark:text-white">Karam Abbas</p>
+        <p class="text-center dark:text-white">West-MEC Coding Student that likes food and games</p> <!--Factual-->
         <button class="bg-blue-600 rounded-full text-white p-1 hover:bg-blue-800 m-2">Message</button>
     </div>
-
-    <div class="flex items-center flex-col">
-        <img class="rounded-full w-20 border-5 m-2" src="./drippy.jpg" alt="Profile Picture">
-        <h1 class="text-4xl font-extrabold">KolKhara08</h1>
-        <p class="font-bold">Karam Abbas</p>
-        <p>West-MEC Coding Student</p>
+    <div class="flex items-center justify-center flex-col">
+        <img class="rounded-full h-[70px] w-[70px] border-5" src="./will smith pfp.png" alt="Profile Picture m-2">
+        <h1 class="text-4xl font-extrabold dark:text-white">PuttyChara</h1>
+        <p class="font-bold dark:text-white">Hussein Abbas</p> <!--Big brother-->
+        <p class="text-center dark:text-white">Cool Big Brother going to Medical School in Grenada</p>
         <button class="bg-blue-600 rounded-full text-white p-1 hover:bg-blue-800 m-2">Message</button>
-    </div>  
+    </div>
+    <div class="flex items-center justify-center flex-col">
+        <img class="rounded-full h-[70px] w-[70px] border-5" src="./drake.jpg" alt="Profile Picture m-2">
+        <h1 class="text-4xl font-extrabold dark:text-white">Drake Boi</h1>
+        <p class="font-bold dark:text-white">Ari Lipschultz</p> <!--A friend-->
+        <p class="text-center dark:text-white">Certified Lover Sigma Sigma Boy that doesn't like Coding</p> <!-- Obsessed with Drake and the Sigma meme -->
+        <button class="bg-blue-600 rounded-full text-white p-1 hover:bg-blue-800 m-2">Message</button>
+    </div>
+    <div class="flex items-center justify-center md:fixed bottom-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+        </svg>          
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 7.5h-.75A2.25 2.25 0 0 0 4.5 9.75v7.5a2.25 2.25 0 0 0 2.25 2.25h7.5a2.25 2.25 0 0 0 2.25-2.25v-7.5a2.25 2.25 0 0 0-2.25-2.25h-.75m0-3-3-3m0 0-3 3m3-3v11.25m6-2.25h.75a2.25 2.25 0 0 1 2.25 2.25v7.5a2.25 2.25 0 0 1-2.25 2.25h-7.5a2.25 2.25 0 0 1-2.25-2.25v-.75" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+        </svg>
+      </div>
 </section>
 </body>
 </html>

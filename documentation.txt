@@ -2,6 +2,7 @@ Research:
 
 Tailwind CSS is an open source CSS framework.
 
-Unlike other frameworks like Bootstrap, there are no predefined classes for elements such as buttons or tables. Instead, it creates a list of "utility" CSS classes.
+Unlike other frameworks like Bootstrap, there are no predefined classes for elements such as buttons or tables. 
+Instead, it creates a list of "utility" CSS classes.
 
 Utility classes are single purpose classes that apply styles directly to the HTML elements.
